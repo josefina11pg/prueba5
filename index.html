@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facu te amo 🥰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <canvas id="starCanvas"></canvas>
+   
+   <!-- Diapositiva 1: Botón inicial -->
+    <div class="slide" id="slide1">
+        <button onclick="nextSlide('slide2')">Apriete aquí solo si me ama</button>
+    </div>
+
+    <!-- Diapositiva 2: ¿Estás seguro? -->
+    <div class="slide" id="slide2" style="display:none;">
+        <h2>¿Estás seguro?</h2>
+        <img src="https://media.tenor.com/YDns1kCTW5sAAAAi/peahc-and-goma-hug.gif" alt="Un gif simpático">
+        <div class="buttons">
+            <button onclick="nextSlide('slide22')">Chi</button>
+            <button onclick="nextSlide('slideNo')">No</button>
+        </div>
+    </div>
+
+    <!-- Diapositiva 3: Chi - Imagen y frase -->
+    <div class="slide" id="slide3" style="display:none;">
+        <img src="https://media.tenor.com/WKCutj8Z3IIAAAAi/peach-goma.gif" alt="Imagen romántica">
+        <p>jsjs 🤭 Lo sabia! y yo te amo mucho más mi amor! 💖</p>
+        <button onclick="nextSlide('slide4')">Continuar</button>
+    </div>
+
+ <!-- Diapositiva 22: Cont MASTEVALE - Imagen y frase -->
+    <div class="slide" id="slide22" style="display:none;">
+        <img src="https://media1.tenor.com/m/0mYS6V6vfScAAAAd/mastevale.gif" alt="Imagen romántica">
+        <p> </p>
+        <button onclick="nextSlide('slide3')">Continuar</button>
+    </div>
+
+
+    <!-- Diapositiva No: No - Imagen y regreso -->
+    <div class="slide" id="slideNo" style="display:none;">
+        <img src="https://media.tenor.com/jSpsA6J5Ll0AAAAi/gatito-llorando.gif alt="Gif triste">
+        <p>😧😨 Acaso me odias facundo?? uyyy ya me hiciste enojarr 😤😠😡</p>
+        <button onclick="nextSlide('slide2')">Me equivoque de boton CLARAMENTE perdón mi amorr</button>
+    </div>
+
+    <!-- Diapositiva 4: Frase con confeti -->
+    <div class="slide" id="slide4" style="display:none;">
+        <h1>🎉✨ Feliz 1er año mi amor! ✨🌸 </h1>
+        <div class="confetti"></div>
+        <button onclick="nextSlide('slide23')">Continuar</button>
+    </div>
+
+ <!-- Diapositiva 23: GIF - Imagen y frase -->
+    <div class="slide" id="slide23" style="display:none;">
+        <img src="https://media.tenor.com/j5dd1kbQV9QAAAAi/gatitos-tiernos-arriba.gif" alt="Imagen romántica">
+        <p> te amo con todo mi corazón </p>
+        <button onclick="nextSlide('slide5')">Continuar</button>
+    </div>
+
+    <!-- Diapositivas 5 y 6: Frases -->
+    <div class="slide" id="slide5" style="display:none;">
+        <p>En distancia te amo millones… billones de veces al cielo, al sol, a pluton y cualquier galaxia que queramos inventarnos de ahora en adelante </p>
+        <button onclick="nextSlide('slide6')">Continuar</button>
+    </div>
+    <div class="slide" id="slide6" style="display:none;">
+        <p>aaaaaaaaaah no te esperabas que te arme algo asi no??? 🤭.</p>
+        <button onclick="nextSlide('slide24')">Continuar</button>
+    </div>
+
+ <!-- Diapositiva 24: GIF - Imagen y frase -->
+    <div class="slide" id="slide24" style="display:none;">
+        <img src="https://media.tenor.com/W2DS2FXWRKIAAAAi/goma-peach.gif" alt="Imagen romántica">
+        <p> noooo por dios mira que lindo son estos gatitos!💕 </p>
+        <button onclick="nextSlide('slide25')">Continuar</button>
+    </div>
+
+ <!-- Diapositiva 25: GIF - Imagen y frase -->
+    <div class="slide" id="slide25" style="display:none;">
+        <img src="https://media.tenor.com/2Tz8F9OSDB4AAAAi/cat-cute.gif" alt="Imagen romántica">
+        <p> jsjsjs somos? </p>
+        <button onclick="nextSlide('slide26')">Continuar</button>
+    </div>
+
+ <!-- Diapositiva 26: GIF - Imagen y frase -->
+    <div class="slide" id="slide26" style="display:none;">
+        <img src="https://media.tenor.com/ALgGLtEPobsAAAAi/rrra122-rrra112.gif" alt="Imagen romántica">
+        <p> s o m o s  </p>
+        <button onclick="nextSlide('slide27')">Continuar</button>
+    </div>
+    
+ <!-- Diapositiva 27: GIF - Imagen y frase -->
+    <div class="slide" id="slide27" style="display:none;">
+         <img src="https://media.tenor.com/G-0wfjMFcVUAAAAi/peach-goma.gif"alt="Imagen romántica">
+        <p> jsjs me distraje, todo esto para decirte que TE AMO y que aunque no estemos juntos este 13, vamos a tener mas momentos por compartir  </p>
+        <button onclick="nextSlide('slide29')">Continuar</button>
+    </div>    
+    
+
+ <!-- Diapositiva 29: GIF - Imagen y frase -->
+    <div class="slide" id="slide29" style="display:none;">
+         <img src="https://media.tenor.com/O3w6CwTqrs8AAAAi/peach-goma.gif"alt="Imagen romántica">
+        <p> asique junte algunas de mis fotos favoritas nada mas porque si  acontinuacion </p>
+        <p> como... </p>
+        <button onclick="nextSlide('slide7')">Continuar</button>
+    </div>    
+    
+
+    <!-- Secuencia de 12 fotos -------------------------->
+    <div class="slide" id="slide7" style="display:none;">
+        <img src="https://i.postimg.cc/5061xrby/prim.jpg" alt="1">
+        <p>La primera vez que me hablaste y me respondiste una story recontra borrosa de la loli </p>
+         <p> 🤭🩷</p>
+        <button onclick="nextSlide('slide8')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide8" style="display:none;">
+        <img src="https://i.postimg.cc/7hFRrsYF/bab.jpg" alt="2">
+        <p>La primera vez que fuimos a un concierto juntos y fuimos a ver a babasonicos </p>
+        <p>la pasamos muy lindo y vos organizaste todo 😚🩵 </p>
+        <button onclick="nextSlide('slide9')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide9" style="display:none;">
+        <img src="https://i.postimg.cc/nrjW5bZK/dic.jpg" alt="3">
+        <p>🩷 La vez que fuimos a la casa de mis tios y vos llevaste gin para armar 🩷 </p>
+         <p>🩷 y vimos the office 🩷 </p>
+        <p>(todavia ni te conocen pero ya fuimos hace como dos años ) </p>
+        <button onclick="nextSlide('slide10')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide10" style="display:none;">
+        <img src="https://i.postimg.cc/LXwShV8T/sanv.jpg" alt="4">
+        <p>Nuestro primer San Valentin que justo el de la viandita se equivocó de casa al entregar y me lo trajo una vecina 🫣 te amé </p>
+        <p>🩷❤️🧡💛💚🩵💙💜🖤🩶🤍🤎❤️‍🔥❤️‍🩹💖💘💝💕</p>
+        <button onclick="nextSlide('slide11')">Continuar</button>
+    </div>
+    
+     <div class="slide" id="slide11" style="display:none;">
+        <img src="https://i.postimg.cc/RCJ9y2gb/pet.jpg" alt="5">
+        <p> El primer pete de lengua jajaja amamos 😛</p>
+        <p> (no se incrustar videos 🤪)  </p>
+        <p> 👅 👅 👅 👅 👅  </p>
+        <button onclick="nextSlide('slide12')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide12" style="display:none;">
+        <img src="https://i.postimg.cc/fbD6brjZ/latay.jpg" alt="6">
+        <p>💗🥺 La vez que fuimos a ver a Taylor y compartiste esto conmigo, te voy a amar por siempre por eso 🥺💗</p>
+        <button onclick="nextSlide('slide13')">Continuar</button>
+    </div>
+    
+        <div class="slide" id="slide13" style="display:none;">
+        <img src="https://i.postimg.cc/25GgL72W/pizza.jpg" alt="7">
+        <p>🍕 La vez que hicimos la pizza corazón y esta foto de dos de mis comidas favoritas 🍕</p>
+        <button onclick="nextSlide('slide14')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide14" style="display:none;">
+        <img src="https://i.postimg.cc/NfhYcbVG/mira.jpg" alt="8">
+        <p>La primera vez que te pusiste a jugar jueguitos en frente mio y te pusiste a gritar jaj 🤍</p>
+        <button onclick="nextSlide('slide15')">Continuar</button>
+    </div>
+        <div class="slide" id="slide15" style="display:none;">
+        <img src="https://i.postimg.cc/vTnsn61d/fotos.jpg" alt="8">
+        <p>Todas estas fotos </p>
+         <p>🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍 </p>
+        <button onclick="nextSlide('slide16')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide16" style="display:none;">
+        <img src="https://i.postimg.cc/gJB5Nk9k/vos.jpg" alt="9">
+        <p> 🥺 vos así haciendo tus cosas 😚</p>
+        <button onclick="nextSlide('slide17')">Continuar</button>
+    </div>
+        <div class="slide" id="slide17" style="display:none;">
+        <img src="https://i.postimg.cc/fLbpcSrr/asado.jpg" alt="10">
+        <p> 🌼 El primer asado que nos hiciste 🌼</p>
+        <button onclick="nextSlide('slide18')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide18" style="display:none;">
+        <img src="https://i.postimg.cc/8zh2NSvt/ke.jpg" alt="11">
+        <p>🤍 y esta foto jaj te amo 🤍</p>
+        <button onclick="nextSlide('slide30')">Continuar</button>
+    </div>
+
+
+ <!-- Diapositiva 30 GIF - Imagen y frase -->
+    <div class="slide" id="slide30" style="display:none;">
+         <img src="https://media.tenor.com/sMHE9QwNVsoAAAAi/peach-and-goma.gif"alt="Imagen romántica">
+        <p>bueno, tuve que acortar la eleccion de fotos hay bastante jsjs gracias por compartir tantas cosas conmigo amor, aunque en todo este tiempo no compartimos estar en el mismo lugar la mayor parte de las veces es muy lindo saber como siempre encontramos la forma de tenernos.</p>
+<p>🤍</p>
+
+        <button onclick="nextSlide('slide28')">Continuar</button>
+    </div>   
+
+
+
+   <!-- esto no va-->
+    <div class="slide" id="slide20" style="display:none;">
+        <p>clic!</p>
+        <button id="trickyButton" onclick="nextSlide('slide21')">A</button>
+    </div>
+
+    <!-- Diapositiva 21: F  -->
+    <div class="slide" id="slide21" style="display:none;">
+        <p>Frase final aquí...</p>
+        <p>UN TEXTO AQUI: <span id="."></span></p>
+        <button onclick="nextSlide('slide28')">Continuar</button>
+    </div>
+
+
+ <!-- Diapositiva 28: GIF - I -->
+    <div class="slide" id="slide28" style="display:none;">
+         <img src="https://media.tenor.com/GMmJvMe-17wAAAAi/peach-goma.gif"alt="Imagen ">
+        <p> pd: como es nuestro aniversario y realmente no sabia que hacer, te envié algunas cositas por encomienda.</p>
+<p>se que te lo tendria que haber dicho anoche pero no sabía cómo traer el tema y tampoco sabía bien como es el envio asi que lo envíe a retirar como la otra vez, espero puedas ir amor </p>
+
+        <button onclick="nextSlide('slide50')">Continuar</button>
+    </div>   
+
+
+
+    <!-- Diapositiva 50: Gif y reinicio -->
+    <div class="slide" id="slide50" style="display:none;">
+        <img src="https://media.tenor.com/J6RfhiZXpxMAAAAi/gatitos.gif" alt="Gif animado">
+        
+         <p> te amo para siempre mi bebé </p>
+        <p> (chi mas que vos) </p>
+        <p> el proximo lo pasamos juntos?? ♥</p>
+        
+        <button onclick="restart()">Reiniciar</button>
+    </div>
+
+   
+   
+</body>
+<body>
+    <canvas id="starCanvas"></canvas>
+    <!-- Tu contenido de presentación aquí -->
+</body>
+</html>
