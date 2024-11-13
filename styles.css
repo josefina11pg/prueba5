@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #CCA4A6;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: opacity 0.5s;
+}
+
+/* Centrado de los textos */
+h1, h2, p {
+    margin: 10px;
+    display: flex;           /* Añadido para que Flexbox actúe en cada elemento */
+    align-items: center;     /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+    text-align: center;       /* Alineación del texto al centro */
+    height: 100%;             /* Asegura que ocupe toda la altura disponible */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#trickyButton {
+    position: relative;
+}
+
+#trickyButton:hover {
+    animation: moveButton 0.5s forwards;
+}
+
+@keyframes moveButton {
+    0% { transform: translateX(50); }
+    25% { transform: translateX(200px); }
+    50% { transform: translateX(-200px); }
+    75% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.confetti {
+    /* Puedes usar una librería como canvas-confetti para añadir la animación */
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegúrate de que el lienzo esté detrás del contenido */
+}
